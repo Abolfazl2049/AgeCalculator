@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">
+        <p class="firstP"></p>
+        <div class="division">
+          <div class="div1">
+            <label for="Day" class="one">Day</label>
+            <input
+              type="number"
+              name="Day"
+              id="Day"
+              oninput="inputGrabber()"
+              placeholder="DD"
+            />
+          </div>
+          <div class="div2">
+            <label for="Month" class="l3">Month</label>
+            <input
+              type="number"
+              name="Month"
+              id="Month"
+              oninput="inputGrabber()"
+              placeholder="MM"
+            />
+          </div>
+          <div class="div3">
+            <label for="Year" class="l2">Year</label>
+            <input
+              type="number"
+              name="Year"
+              id="Year"
+              oninput="inputGrabber()"
+              placeholder="YYYY"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="child2">
+        <button type="button" class="but-1" onclick="triggerAnimation()">
+          <img src="assets\images\icon-arrow.svg" alt="" />
+        </button>
+        <h1 id="year-R">--</h1>
+        <h1>Years</h1>
+        <br />
+        <h1 id="month-R">--</h1>
+        <h1>Month</h1>
+        <br />
+        <h1 id="day-R">--</h1>
+        <h1>Days</h1>
+        <br />
+        <button type="button" class="but-2" onclick="expand()">
+          <img
+            class="img-1"
+            src="assets/images/arrow_downward_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+            srcset=""
+          />
+          <p class="secondp">Expand</p>
+        </button>
+        <h1 id="hour-R" style="margin-top: 50px">--</h1>
+        <h1>Hours</h1>
+        <br />
+        <h1 id="mintue-R">--</h1>
+        <h1>Mins</h1>
+        <br />
+        <h1 id="second-R" style="color: brown">--</h1>
+        <h1 style="color: brown">sec</h1>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
